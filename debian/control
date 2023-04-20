@@ -1,0 +1,15 @@
+Source: python-yaml
+Maintainer: Yury Frolov <ein-krebs@yandex-team.ru>
+Section: python
+Build-Depends: 
+    python-all-dev,
+    python-all,
+    python-all-dbg,
+    dh-python,
+    dh-sequence-python2
+
+Package: python-yaml
+Architecture: amd64
+Depends: python2
+Description: yaml package for Python2 shipped as Debian file
+
