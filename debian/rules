@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 
 export PYBUILD_NAME=psutil
+export PYBUILD_DISABLE=test
 
 %:
 	dh $@ --with python2 --buildsystem=pybuild

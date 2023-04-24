@@ -13,5 +13,5 @@ Build-Depends:
 Package: python-psutil
 Architecture: amd64
 Depends: python2
-Description: yaml package for Python2 shipped as Debian file
+Description: psutil package for Python2 shipped as Debian file
 
