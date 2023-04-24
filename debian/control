@@ -1,4 +1,4 @@
-Source: python-yaml
+Source: python-epydoc
 Maintainer: Yury Frolov <ein-krebs@yandex-team.ru>
 Section: python
 Build-Depends: 
@@ -10,8 +10,8 @@ Build-Depends:
     dh-sequence-python2,
     python-setuptools
 
-Package: python-yaml
+Package: python-epydoc
 Architecture: amd64
 Depends: python2
-Description: yaml package for Python2 shipped as Debian file
+Description: epydoc package for Python2 shipped as Debian file
 
