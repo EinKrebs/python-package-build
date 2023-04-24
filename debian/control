@@ -6,7 +6,8 @@ Build-Depends:
     python-all,
     python-all-dbg,
     dh-python,
-    dh-sequence-python2
+    dh-sequence-python2,
+    python-setuptools
 
 Package: python-yaml
 Architecture: amd64
