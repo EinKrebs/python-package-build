@@ -1,4 +1,4 @@
-Source: python-yaml
+Source: python-cryptography
 Maintainer: Yury Frolov <ein-krebs@yandex-team.ru>
 Section: python
 Build-Depends: 
@@ -10,8 +10,8 @@ Build-Depends:
     dh-sequence-python2,
     python-setuptools
 
-Package: python-yaml
+Package: python-cryptography
 Architecture: amd64
-Depends: python2
-Description: yaml package for Python2 shipped as Debian file
+Depends: python2, python-asn1crypto, python-cffi-backend-api-min (<= 9729), python-cffi-backend-api-max (>= 9729), python-enum34, python-idna (>= 2.1), python-ipaddress, python-six (>= 1.4.1), libc6 (>= 2.14), libssl1.1 (>= 1.1.1)
+Description: cryptography package for Python2 shipped as Debian file
 
