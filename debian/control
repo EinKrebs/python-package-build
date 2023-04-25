@@ -1,4 +1,4 @@
-Source: python-yaml
+Source: python-ldap
 Maintainer: Yury Frolov <ein-krebs@yandex-team.ru>
 Section: python
 Build-Depends: 
@@ -10,8 +10,8 @@ Build-Depends:
     dh-sequence-python2,
     python-setuptools
 
-Package: python-yaml
+Package: python-ldap
 Architecture: amd64
-Depends: python2
-Description: yaml package for Python2 shipped as Debian file
+Depends: python2, python-pyasn1 (>= 0.3.7), python-pyasn1-modules, libc6 (>= 2.14), libldap-2.4-2 (>= 2.4.11)
+Description: python-ldap package for Python2 shipped as Debian file
 
