@@ -8,7 +8,10 @@ Build-Depends:
     python-all-dbg,
     dh-python,
     dh-sequence-python2,
-    python-setuptools
+    python-setuptools,
+    libldap2-dev,
+    libsasl2-dev,
+    libssl-dev
 
 Package: python-ldap
 Architecture: amd64
