@@ -1,7 +1,20 @@
 #!/usr/bin/make -f
 
 export PYBUILD_NAME=cryptography
+export PYBUILD_DISABLE=test
 
 %:
 	dh $@ --with python2 --buildsystem=pybuild
+
+override_dh_auto_clean:
+	python2 setup.py clean
+
+override_dh_auto_configure:
+	python2 setup.py config
+
+override_dh_auto_build:
+	python2 setup.py build
+
+override_dh_auto_install:
+	python2 setup.py install --root /root/python-cryptography/debian/python-cryptography
 
