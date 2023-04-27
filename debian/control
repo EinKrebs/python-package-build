@@ -1,4 +1,4 @@
-Source: python-yaml
+Source: python-pbr
 Maintainer: Yury Frolov <ein-krebs@yandex-team.ru>
 Section: python
 Build-Depends: 
@@ -10,8 +10,8 @@ Build-Depends:
     dh-sequence-python2,
     python-setuptools
 
-Package: python-yaml
+Package: python-pbr
 Architecture: amd64
-Depends: python2
-Description: yaml package for Python2 shipped as Debian file
+Depends: python2, python-pkg-resources, python-six
+Description: pbr package for Python2 shipped as Debian file
 
