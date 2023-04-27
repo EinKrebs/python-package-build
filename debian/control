@@ -1,4 +1,4 @@
-Source: python-yaml
+Source: python-cffi-backend
 Maintainer: Yury Frolov <ein-krebs@yandex-team.ru>
 Section: python
 Build-Depends: 
@@ -10,8 +10,8 @@ Build-Depends:
     dh-sequence-python2,
     python-setuptools
 
-Package: python-yaml
+Package: python-cffi-backend
 Architecture: amd64
-Depends: python2
-Description: yaml package for Python2 shipped as Debian file
+Depends: python2, libc6 (>= 2.14), libffi6 (>= 3.0.4)
+Description: cffi package api for Python2 shipped as Debian file
 
