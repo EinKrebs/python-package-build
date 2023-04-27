@@ -12,6 +12,6 @@ Build-Depends:
 
 Package: python-behave
 Architecture: amd64
-Depends: python2
+Depends: python2, python-parse, python-parse-type, python-six
 Description: behave package for Python2 shipped as Debian file
 
