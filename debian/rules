@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-export PYBUILD_NAME=PyYAML
+export PYBUILD_NAME=asn1crypto
 
 %:
 	dh $@ --with python2 --buildsystem=pybuild
