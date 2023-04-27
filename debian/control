@@ -12,6 +12,6 @@ Build-Depends:
 
 Package: python-psutil
 Architecture: amd64
-Depends: python2
+Depends: python2, libc6 (>= 2.13)
 Description: psutil package for Python2 shipped as Debian file
 
