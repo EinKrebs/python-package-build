@@ -12,6 +12,6 @@ Build-Depends:
 
 Package: python-paramiko
 Architecture: amd64
-Depends: python2
+Depends: python2, python-cryptography (>= 1.1), python-pyasn1 (>= 0.1.7)
 Description: paramiko package for Python2 shipped as Debian file
 
