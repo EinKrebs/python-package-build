@@ -1,4 +1,4 @@
-Source: python-yaml
+Source: python-pyasn1-modules
 Maintainer: Yury Frolov <ein-krebs@yandex-team.ru>
 Section: python
 Build-Depends: 
@@ -10,8 +10,8 @@ Build-Depends:
     dh-sequence-python2,
     python-setuptools
 
-Package: python-yaml
+Package: python-pyasn1-modules
 Architecture: amd64
-Depends: python2
-Description: yaml package for Python2 shipped as Debian file
+Depends: python2, python-pyasn1 (>= 0.4.1), python-pyasn1 (<< 0.5.0)
+Description: pyasn1-modules package for Python2 shipped as Debian file
 
