@@ -12,6 +12,6 @@ Build-Depends:
 
 Package: python-yaml
 Architecture: amd64
-Depends: python2
+Depends: python2,  libc6 (>= 2.14), libyaml-0-2
 Description: yaml package for Python2 shipped as Debian file
 
