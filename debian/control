@@ -1,17 +1,11 @@
-Source: python-yaml
+Source: python-is-python2
 Maintainer: Yury Frolov <ein-krebs@yandex-team.ru>
 Section: python
 Build-Depends: 
-    dh-make,
-    python-all-dev,
-    python-all,
-    python-all-dbg,
-    dh-python,
-    dh-sequence-python2,
-    python-setuptools
+    dh-make
 
-Package: python-yaml
+Package: python-is-python2
 Architecture: amd64
 Depends: python2
-Description: yaml package for Python2 shipped as Debian file
-
+Breaks: python-is-python3
+Description: Sets Python2 as default system Python

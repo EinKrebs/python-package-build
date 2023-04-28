@@ -1,7 +1,15 @@
 #!/usr/bin/make -f
 
-export PYBUILD_NAME=PyYAML
+export PYBUILD_NAME=pip
 
 %:
-	dh $@ --with python2 --buildsystem=pybuild
+	dh $@ 
+
+override_dh_auto_build:
+
+override_dh_auto_test:
+
+override_dh_auto_install:
+
+
 
