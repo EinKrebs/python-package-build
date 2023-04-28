@@ -11,6 +11,6 @@ Build-Depends:
 
 Package: python-pip
 Architecture: amd64
-Depends: python2
+Depends: python2, ca-certificates, python-pip-whl (TODO: add version)
 Description: pip package for Python2 shipped as Debian file
 
