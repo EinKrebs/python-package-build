@@ -1,4 +1,4 @@
-Source: python-yaml
+Source: python-pip
 Maintainer: Yury Frolov <ein-krebs@yandex-team.ru>
 Section: python
 Build-Depends: 
@@ -9,8 +9,8 @@ Build-Depends:
     dh-sequence-python2,
     python-setuptools
 
-Package: python-yaml
+Package: python-pip
 Architecture: amd64
 Depends: python2
-Description: yaml package for Python2 shipped as Debian file
+Description: pip package for Python2 shipped as Debian file
 
