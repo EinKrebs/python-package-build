@@ -10,7 +10,7 @@ Build-Depends:
     dh-sequence-python2,
     python-setuptools
 
-Package: python-parse
+Package: python-parse-type
 Architecture: amd64
 Depends: python2, python-enum34, python-parse, python-six
 Description: An extension for parse package for Python2 shipped as Debian file
