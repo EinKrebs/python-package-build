@@ -13,5 +13,6 @@ Build-Depends:
 Package: python-cffi-backend
 Architecture: amd64
 Depends: python2, libc6 (>= 2.14), libffi7
+Provides: python-cffi-backend-api-9729, python-cffi-backend-api-max (= 10495), python-cffi-backend-api-min (= 9729)
 Description: cffi package api for Python2 shipped as Debian file
 
