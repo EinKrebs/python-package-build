@@ -12,6 +12,6 @@ Build-Depends:
 
 Package: python-cryptography
 Architecture: amd64
-Depends: python2, python-asn1crypto, python-cffi-backend-api-min (<= 9729), python-cffi-backend-api-max (>= 9729), python-enum34, python-idna (>= 2.1), python-ipaddress, python-six (>= 1.4.1), libc6 (>= 2.14), libssl1.1 (>= 1.1.1)
+Depends: python2, python-asn1crypto, python-cffi-backend-api-min (<= 9729), python-cffi-backend-api-max (>= 9729), python-enum34, python-idna (>= 2.1), python-ipaddress, python-six (>= 1.4.1), libc6 (>= 2.14), libssl3
 Description: cryptography package for Python2 shipped as Debian file
 
