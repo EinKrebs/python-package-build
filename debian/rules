@@ -1,5 +1,3 @@
-#!/usr/bin/make -f
-
 export PYBUILD_NAME=paramiko
 export PYBUILD_TEST_ARGS='{interpreter} python-paramiko/test.py'
 
