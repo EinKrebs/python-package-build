@@ -1,5 +1,3 @@
-#!/usr/bin/make -f
-
 export PYBUILD_NAME=mock
 
 %:
