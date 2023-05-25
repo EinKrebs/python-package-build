@@ -2,6 +2,7 @@ Source: python-yaml
 Maintainer: Yury Frolov <ein-krebs@yandex-team.ru>
 Section: python
 Build-Depends: 
+    dh-make,
     python-all-dev,
     python-all,
     python-all-dbg,
