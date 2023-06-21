@@ -15,6 +15,6 @@ Build-Depends:
 
 Package: python-ldap
 Architecture: amd64
-Depends: python2, python-pyasn1 (>= 0.3.7), python-pyasn1-modules, libc6 (>= 2.14), libldap-2.5-0
+Depends: python2, python-pyasn1 (>= 0.3.7), python-pyasn1-modules, libc6 (>= 2.14), libldap-2.4-2
 Description: python-ldap package for Python2 shipped as Debian file
 
