@@ -1,17 +1,103 @@
-Source: python-yaml
-Maintainer: Yury Frolov <ein-krebs@yandex-team.ru>
+Source: what-is-python
 Section: python
-Build-Depends: 
-    dh-make,
-    python-all-dev,
-    python-all,
-    python-all-dbg,
-    dh-python,
-    dh-sequence-python2,
-    python-setuptools
+Priority: optional
+Maintainer: Dimitri John Ledkov <xnox@ubuntu.com>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.5.0
 
-Package: python-yaml
-Architecture: amd64
-Depends: python2
-Description: yaml package for Python2 shipped as Debian file
+Package: python-is-python3
+Architecture: all
+Multi-Arch: allowed
+Depends: ${misc:Depends}, python3
+Breaks: python-is-python2, python-is-python2-but-deprecated, python
+Replaces: python-is-python2, python-is-python2-but-deprecated, python
+XB-Cnf-Ignore-Commands: python
+Description: symlinks /usr/bin/python to python3
+ In Ubuntu, all python packages use explicit python3 or python2
+ interpreter and do not use unversioned /usr/bin/python at all. Some
+ third-party code is now predominantly python3 based, yet may use
+ /usr/bin/python.
+ .
+ This is a convenience package which ships a symlink to point
+ the /usr/bin/python interpreter at the current default python3. It may
+ improve compatibility with other modern systems, whilst breaking some
+ obsolete or 3rd-party software.
+ .
+ No packages may declare dependencies on this package.
 
+Package: python-dev-is-python3
+Architecture: all
+Multi-Arch: allowed
+Depends: ${misc:Depends}, python3-dev, python-is-python3
+Breaks: python-dev-is-python2, python-dev-is-python2-but-deprecated, python-dev
+Replaces: python-dev-is-python2, python-dev-is-python2-but-deprecated, python-dev
+XB-Cnf-Ignore-Commands: python-config
+Description: symlinks /usr/bin/python-config to python3-config
+ In Ubuntu, all python packages use explicit python3 or python2
+ interpreter and do not use unversioned /usr/bin/python-config at all.
+ Some third-party code is now predominantly python3 based, yet may use
+ /usr/bin/python-config.
+ .
+ This is a convenience package which ships a symlink to point
+ /usr/bin/python-config script at the current default python3. It may
+ improve compatibility with other modern systems, whilst breaking some
+ obsolete or 3rd-party software.
+ .
+ No packages may declare dependencies on this package.
+
+Package: python-is-python2
+Architecture: all
+Section: oldlibs
+Multi-Arch: allowed
+Depends: ${misc:Depends}, python2
+Breaks: python-is-python3, python, python-is-python2-but-deprecated
+Replaces: python-is-python3, python, python-is-python2-but-deprecated
+Provides: python (= 2.7.17-1)
+XB-Cnf-Ignore-Commands: python
+Description: symlinks /usr/bin/python to the DEPRECATED python2
+ In Ubuntu, all python packages use explicit python3 or python2
+ interpreter and do not use unversioned /usr/bin/python at all. Some
+ third-party code may still be python2 based, yet may use
+ /usr/bin/python.
+ .
+ This is a convenience package which ships a symlink to point
+ /usr/bin/python interpreter at the current default python2. It may
+ improve compatibility with obsolete 3rd-party software, whilst
+ breaking some modern software.
+ .
+ This package will be installed upon upgrades to Ubuntu 20.04, if
+ DEPRECATED python2 was installed.
+ .
+ python2 is DEPRECATED and will not be provided in the future Ubuntu
+ release. It is recommended to remove python2 and this package after
+ ensuring that only python3 is in use.
+ .
+ No packages may declare dependencies on this package.
+
+Package: python-dev-is-python2
+Architecture: all
+Multi-Arch: allowed
+Depends: ${misc:Depends}, python2-dev, python-is-python2
+Breaks: python-dev-is-python3, python-dev, python-dev-is-python2-but-deprecated
+Replaces: python-dev-is-python3, python-dev, python-dev-is-python2-but-deprecated
+Provides: python-dev (= 2.7.17-1)
+XB-Cnf-Ignore-Commands: python-config
+Description: symlinks /usr/bin/python-config to the DEPRECATED python2-config
+ In Ubuntu, all python packages use explicit python3 or python2
+ interpreter and do not use unversioned /usr/bin/python-config at all. Some
+ third-party code may still be python2 based, yet may use
+ /usr/bin/python-config.
+ .
+ This is a convenience package which ships a symlink to point
+ the /usr/bin/python-config script at the current default python2.
+ It may improve compatibility with obsolete 3rd-party software,
+ whilst breaking some modern software.
+ .
+ This package will be installed upon upgrades to Ubuntu 20.04, if
+ the DEPRECATED python2-dev was installed.
+ .
+ python2 is DEPRECATED and will not be provided in the future Ubuntu
+ release. It is recommended to remove python2 and this package after
+ ensuring that only python3 is in use.
+ .
+ No packages may declare dependencies on this package.

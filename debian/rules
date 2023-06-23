@@ -1,7 +1,15 @@
 #!/usr/bin/make -f
-
-export PYBUILD_NAME=PyYAML
+include /usr/share/dpkg/default.mk
 
 %:
-	dh $@ --with python2 --buildsystem=pybuild
+	dh $@
 
+override_dh_installdocs:
+	dh_installdocs -ppython-is-python3 -ppython-dev-is-python3 --link-doc=python-is-python3
+	dh_installdocs -ppython-is-python2 -ppython-dev-is-python2 --link-doc=python-is-python2
+
+override_dh_gencontrol:
+	dh_gencontrol -ppython-is-python3 -- -v3.8.2-$(DEB_VERSION)
+	dh_gencontrol -ppython-dev-is-python3 -- -v3.8.2-$(DEB_VERSION)
+	dh_gencontrol -ppython-is-python2 -- -v2.7.17-$(DEB_VERSION)
+	dh_gencontrol -ppython-dev-is-python2 -- -v2.7.17-$(DEB_VERSION)
