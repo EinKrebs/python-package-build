@@ -1,7 +1,8 @@
-Source: python-yaml
-Maintainer: Yury Frolov <ein-krebs@yandex-team.ru>
+Source: porto
+Maintainer: Porto Team <porto@yandex-team.ru>
 Section: python
 Build-Depends: 
+    dh-make,
     python-all-dev,
     python-all,
     python-all-dbg,
@@ -9,8 +10,8 @@ Build-Depends:
     dh-sequence-python2,
     python-setuptools
 
-Package: python-yaml
-Architecture: amd64
-Depends: python2
-Description: yaml package for Python2 shipped as Debian file
+Package: python-portopy
+Architecture: all
+Depends: python-protobuf, python2 (<< 2.8), python2 (>= 2.7~), python2:any (<< 2.8), python2:any (>= 2.7~)
+Description: Python API for porto
 

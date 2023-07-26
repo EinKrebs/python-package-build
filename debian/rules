@@ -1,7 +1,6 @@
 #!/usr/bin/make -f
 
-export PYBUILD_NAME=PyYAML
+export PYBUILD_NAME=portopy
 
 %:
-	dh $@ --with python2 --buildsystem=pybuild
-
+	dh $@ --with python2,python3 --without python-support --buildsystem=pybuild
