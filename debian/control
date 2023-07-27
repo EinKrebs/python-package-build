@@ -1,4 +1,4 @@
-Source: porto
+Source: python-portopy
 Maintainer: Porto Team <porto@yandex-team.ru>
 Section: python
 Build-Depends: 
